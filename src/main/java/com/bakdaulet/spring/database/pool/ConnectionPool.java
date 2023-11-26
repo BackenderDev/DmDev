@@ -19,7 +19,6 @@ public class ConnectionPool{
 
     @PostConstruct
     private void init() {
-        System.out.println("i am groot");
         System.out.println("VRNEJKFEW");
         System.out.println("Init connection pool");
     }
