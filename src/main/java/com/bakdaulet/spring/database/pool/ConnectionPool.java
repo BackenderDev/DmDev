@@ -19,6 +19,7 @@ public class ConnectionPool{
 
     @PostConstruct
     private void init() {
+        System.out.println("VRNEJKFEW");
         System.out.println("Init connection pool");
     }
 
