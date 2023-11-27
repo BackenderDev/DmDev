@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Scope;
-import web.config.WebConfiguration;
+import com.web.config.WebConfiguration;
 
 //@ImportResource("classpath:application.xml")
 @Import(WebConfiguration.class)
