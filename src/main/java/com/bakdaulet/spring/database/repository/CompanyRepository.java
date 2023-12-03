@@ -6,6 +6,7 @@ import com.bakdaulet.spring.database.entity.Company;
 import com.bakdaulet.spring.database.pool.ConnectionPool;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Scope;
@@ -20,6 +21,7 @@ import java.util.Optional;
 @Scope(BeanDefinition.SCOPE_PROTOTYPE)
 @RequiredArgsConstructor
 public class CompanyRepository implements CrudRepository<Integer, Company> {
+    private static final Logger log = org.slf4j.LoggerFactory.getLogger(CompanyRepository.class);
     private final ConnectionPool pool1;
 
     private final List<ConnectionPool> poolList;
@@ -28,11 +30,11 @@ public class CompanyRepository implements CrudRepository<Integer, Company> {
     private final Integer poolSize;
 
 
-
     @PostConstruct
-    private void init(){
-        System.out.println("init company repository");
+    private void init() {
+        log.warn("init company repository");
     }
+
     @Override
     public Optional<Company> findById(Integer id) {
         System.out.println("findById method... ");
