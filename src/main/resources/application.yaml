@@ -24,3 +24,6 @@ logging:
   level:
     root: WARN
     com.bakdaulet.spring.database.pool: INFO
+  file:
+    name: bakdaulet.log
+    path: /

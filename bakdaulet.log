@@ -1,0 +1,8 @@
+2023-12-03T15:57:00.026+06:00  INFO 25512 --- [main] c.b.spring.database.pool.ConnectionPool  : Init connection pool
+2023-12-03T15:57:00.035+06:00  INFO 25512 --- [main] c.b.spring.database.pool.ConnectionPool  : Init connection pool
+2023-12-03T15:57:00.036+06:00  INFO 25512 --- [main] c.b.spring.database.pool.ConnectionPool  : Init connection pool
+2023-12-03T15:57:00.040+06:00  WARN 25512 --- [main] c.b.s.d.repository.CompanyRepository     : init company repository
+2023-12-03T15:57:00.046+06:00  WARN 25512 --- [main] c.b.s.d.repository.CompanyRepository     : init company repository
+2023-12-03T15:57:00.134+06:00  INFO 25512 --- [SpringApplicationShutdownHook] c.b.spring.database.pool.ConnectionPool  : Clean connection pool
+2023-12-03T15:57:00.134+06:00  INFO 25512 --- [SpringApplicationShutdownHook] c.b.spring.database.pool.ConnectionPool  : Clean connection pool
+2023-12-03T15:57:00.134+06:00  INFO 25512 --- [SpringApplicationShutdownHook] c.b.spring.database.pool.ConnectionPool  : Clean connection pool
